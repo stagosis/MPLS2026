@@ -2045,6 +2045,12 @@
         border-color: var(--border2);
         transform: translateY(-2px);
       }
+
+      .message-card img{
+        width: 100%;
+        height: 260px;
+      }
+
       .message-from {
         font-size: 0.7rem;
         color: var(--text3);
@@ -3844,7 +3850,7 @@
                   <td>10 Juli</td>
                   <td>Pra MPLS</td>
                   <td>
-                    <span class="schedule-badge sbadge-blue">Segera</span>
+                    <span class="schedule-badge sbadge-green">Selesai</span>
                   </td>
                 </tr>
                 <tr>
@@ -3852,7 +3858,7 @@
                   <td>13 Juli</td>
                   <td>MPLS Day 1</td>
                   <td>
-                    <span class="schedule-badge sbadge-gold">Menunggu</span>
+                    <span class="schedule-badge sbadge-blue">Segera</span>
                   </td>
                 </tr>
                 <tr>
@@ -3876,7 +3882,7 @@
                   <td>16 Juli</td>
                   <td>MPLS Day 4</td>
                   <td>
-                    <span class="schedule-badge sbadge-green">...</span>
+                    <span class="schedule-badge sbadge-gold">Menunggu</span>
                   </td>
                 </tr>
               </tbody>
@@ -4661,27 +4667,27 @@
           <div class="messages-wall" id="messageWall">
             <div class="message-card">
               <div class="message-from">☁️ Gugus AKASA</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Akasa.JPG" alt="">
             </div>
             <div class="message-card">
               <div class="message-from">🔥 Gugus AGNI</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Agni.JPG" alt="">
             </div>
             <div class="message-card">
               <div class="message-from">☀️ Gugus ARUNA</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Aruna.JPG" alt="">
             </div>
             <div class="message-card">
               <div class="message-from">🍃 Gugus BAYU</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Bayu.JPG" alt="">
             </div>
             <div class="message-card">
               <div class="message-from">💧 Gugus TIRTA</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Tirta.JPG" alt="">
             </div>
             <div class="message-card">
               <div class="message-from">🌍 Gugus BHUMI</div>
-              <div class="message-text">"Coming soon"</div>
+              <img src="K_Bhumi.JPG" alt="">
             </div>
           </div>
         </div>
@@ -6772,7 +6778,7 @@
    COUNTDOWN TIMER (ke 14 Juni 2026 07:00)
    ============================================= */
       function updateCountdown() {
-        const target = new Date("2026-07-10T07:00:00+07:00").getTime();
+        const target = new Date("2026-07-13T07:00:00+07:00").getTime();
         const now = new Date().getTime();
         const diff = target - now;
         if (diff <= 0) {
